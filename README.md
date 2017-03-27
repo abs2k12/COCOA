@@ -59,29 +59,50 @@ The code will then produce a projected snapshot, the name of the default project
 2) To use the second module of the code (simulating observations), The input_observation.py file needs to be setup. In this file the parameters that define the properties of the synthetic observations need to be setup. These parameters are required by the *sim2obs* code to generate the FITS image from the projected snapshot. These parameters are as follows:
 
 -NAXIS1 (valx) - Image/CCD size in x (units of pixel, typical values ~ 2048, 4096).
+
 -NAXIS2 (valy) - Image/CCD size in y (units of pixel,typical values ~ 2048, 4096).
+
 -DB-NX  (posx) - x-coordinate column in projected snapshot file (value of x position should be in pc).
+
 -DB-NY  (posy) - y-coordinate column in projected snapshot file (value of y position should be in pc).
+
 -DB-NMAG (dmag) - Magnitude column in projected snapshot file (absolute magnitude).
+
 -OBJECT (obje) - Object name for the simulated observation (any string value may be entered).
+
 -DISTANCE (dist) - Distance to the cluster in units of parsecs.
+
 -FILTER (filt) - Filter name for which the simulation is being generated. Any string can be entered.
+
 -PIXSCALE (pixs)- Gives the pixel scale of the instrument in units of arcseconds/pixel. This defines the spatial resolution -of the telescope.
+
 -GAIN (gain) - Instrument gain in units of photons/ADU.
+
 -SATLEVEL (satl) - Saturation level of the detector in counts.
+
 -EXPOSURE (expo) - Exposure for the observation as a fraction of a direct counts.
+
 -SEEING (seei) - Seeing value for the observation in units of arcseconds
+
 -BACKGROUND (back)- Background level of the simulated observation. Typical values between 1 and 10.
+
 -PSF (psff) - Point spread function (PSF) model for the simulated observation. Either string values 'G' or 'M' can be entered for this parameter.  G for Gaussian profile and M for Moffat profile. There are no variations in the PSF produced by sim2obs.
+
 -M_BETA (mbeta) - In the case a Moffat PSF is used, this defines the beta parameter for the Moffat distribution.
+
 -NOISE (noise) - If set to 1 then this parameter introduces a Poisson noise to the observed FITS image. This parameter can take either the value 0 (no noise) or 1 (Poisson noise).
+
 -RA_OFFSET (raof) - Defines the offset value from the center of the cluster in the x direction. This parameter is useful in imaging different field of the cluster model. Units for offset are in arcseconds.
+
 -DEC_OFFSET (deco) - Defines the offset value from the center of the cluster in the y direction.  Units for offset are in arcseconds.
+
 -OVERLAP_FACTOR - This parameter defines the overlapping factor between adjoining frames when multiple images need to be made to image the entire cluster model. The value must always be less than 1.0. The default value for this parameter is set to 0.97, this means that there is a 3\% overlap between neighboring frames. 
 
 There are also two parameters in the param_rtt.py (this file is created after the projection module is run). It will have to edited if the observation module is to be used by itself. The two parameters in this file are:
+
 -rtt - This defines the radial extent of the cluster till which the simulated observations will be calculated. If you would only like to image the cluster up to a certain radius then you can enter that value for this parameter in units of parsec.
--snapname - This variable should contain the name of the projected snapshot file in which you have the three columns that were specified in the input\_observation.py file.
+
+-snapname - This variable should contain the name of the projected snapshot file in which you have the three columns that were specified in the input_observation.py file.
 
 Once the input files for the observation module are setup, one can run the module using the following command:
 
