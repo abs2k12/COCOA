@@ -1,0 +1,21 @@
+NAXIS1     = 2048	// image size
+NAXIS2     = 2048	// image size
+DB-NX      = 2		// x-coordinate column in database
+DB-NY      = 3		// y-coordinate column in database
+DB-NMAG    = 24		// magnitude column in database
+OBJECT     = M22a	// object name
+DISTANCE   = 3.3e3	// distance [parsecs]
+FILTER     = V
+PIXSCALE   = 0.4	// pixel scale [arcseconds]
+GAIN       = 1.0	// [photons/ADU]
+SATLEVEL   = 32000.0	// detector saturation level
+EXPOSURE   = 0.5	// fraction of a direct counts
+SEEING     = 1.2	// [arcseconds]
+BACKGROUND = 10.0	// background level
+PSF        = M		// G-Gaussian, M-Moffat
+M_BETA     = 1.8	// beta parameter for Moffat
+NOISE      = 1		// 0: no noise, 1: Poisson noise
+RA_OFFSET  = 0.0	// RA offset from the center [arcseconds]
+DEC_OFFSET = 0.0	// DEC offset from the center [arcseconds]
+VERBOSE    = 1
+END

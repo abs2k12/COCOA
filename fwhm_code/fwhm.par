@@ -1,0 +1,13 @@
+SKY_MOD     = mode	/* sky calc. algorithm (mode/quantile/median/mean) */
+QINTERVAL   = 0.1	/* quantile interval				*/
+IN_SKY_RAD  = 3		/* sky annulus inner radius (times maxfwhm)	*/
+OUT_SKY_RAD = 5		/* sky annulus outer radius (times maxfwhm)	*/
+MARGIN      = 5		/* limit of the star distance from the edge	*/
+MIN_FWHM    = 1.0	/* minimum FWHM of a good star			*/
+MAX_FWHM    = 14.0	/* maximum FWHM of a good star			*/
+MIN_PEAK    = 1.0e2	/* minimum peak of a good star			*/
+MAX_PEAK    = 5.0e3	/* maximum peak of a good star			*/
+MIN_SKY     = 1.0	/* minimum sky level				*/
+MAX_SKY     = 5.0e3	/* maximum sky level				*/
+VERBOSE     = 1		/* verbose level 0,1,2				*/
+END

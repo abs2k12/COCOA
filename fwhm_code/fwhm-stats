@@ -1,0 +1,11 @@
+min= 44.1667 at (1152, 689)		max= 835781 at (1227, 1882)
+  stats(): lminsky changed to 44.1667
+mean=   90.319 +- 0.0527338  std.dev= 107.972  (4192190 pixels)
+median= 82.8656
+quantile= 72.139 (0.1)
+	WARNING! calc_mode(): position of highest bin - not a fit
+mode=   84.1667
+
+global sky level= 84.166664
+frame       <FWHM>   skylevel  FWHM  NSTARS
+../fits-files/0.0.fits   3.02   84.17   3.01    374
