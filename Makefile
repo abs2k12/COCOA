@@ -14,4 +14,4 @@ clean_overlap: clean_overlap.f
 	gfortran clean_overlap.f -o clean_overlap
 
 clean:
-	rm -rf fit-king 5 sim2obs/sim2obs
+	rm -rf fit-king-5 sim2obs/sim2obs sbvp-vdp clean_overlap 
