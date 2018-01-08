@@ -80,7 +80,7 @@ The code will then produce a projected snapshot, the name of the default project
 
 -SATLEVEL (satl) - Saturation level of the detector in counts.
 
--EXPOSURE (expo) - Exposure for the observation as a fraction of a direct counts.
+-EXPOSURE (expo) - Exposure for the observation as a multiple of a direct counts.
 
 -SEEING (seei) - Seeing value for the observation in units of arcseconds
 
