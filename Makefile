@@ -1,4 +1,4 @@
-all: sim2obs/sim2obs fit-king-5
+all: sim2obs/sim2obs fit-king-5 sbpvdp clean_overlap
 
 .PHONY: sim2obs/sim2obs clean
 sim2obs/sim2obs:
